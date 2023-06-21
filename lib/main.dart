@@ -5,7 +5,7 @@ import 'package:hive/hive.dart';
 
 void main() async {
   await Hive.initFlutter();
-  var db = await Hive.openBox("todolist");
+  await Hive.openBox("todolist");
   runApp(const MyApp());
 }
 
